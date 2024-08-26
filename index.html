@@ -14,16 +14,56 @@
 </head>
 
 <body>
-    <main class="font-poppins">
+    <main class="font-poppins flex flex-col space-y-12">
         <!-- main container -->
-        <div>
-            <h1 class="text-9xl text-center font-bold">Digital Tasbih</h1>
+        <h1
+            class="text-9xl text-center font-bold bg-gradient-to-r from-green-500 to-blue-600 bg-clip-text text-transparent mt-20">
+            Digital Tasbih</h1>
+            <!-- card section -->
+        <div class="flex justify-around ">
+            <!-- Subahan allah card -->
+            <div class="card flex justify-center items-center space-y-10 bg-red-50 w-96 text-black p-12">
+                <h2 class="text-4xl  font-semibold">Subahan Allah</h2>
+                <p id="subahanAllahDisplay" class="text-5xl">0</p>
+                <div class="flex gap-3">
+                    <button id="SubahanAllahIncriment" class="bg-green-600 text-white py-3 px-6 rounded-lg text-2xl font-medium " type="button">INCRIMENT
+                    </button>
+                    <button id="subahanAllahDecriment" class="bg-red-600 text-white py-3 px-6 rounded-lg text-2xl font-medium" type="button">DECRIMENT
+                    </button>
+                </div>
+            </div>
+            <!-- Allhamdulillah card -->
+            <div class="card flex justify-center items-center space-y-10 bg-red-50 w-96 text-black p-12">
+                <h2 class="text-4xl  font-semibold">Allhamdulillah</h2>
+                <p id="allhamdulillahDisplay" class="text-5xl">0</p>
+                <div class="flex gap-3">
+                    <button id="allhamdulillahIncriment" class="bg-green-600 text-white py-3 px-6 rounded-lg text-2xl font-medium" type="button">INCRIMENT
+                    </button>
+                    <button id="allhamdulillahDecriment" class="bg-red-600 text-white py-3 px-6 rounded-lg text-2xl font-medium" type="button">DECRIMENT
+                    </button>
+                </div>
+            </div>
+            <!-- allahuakber card -->
+            <div class="card flex justify-center items-center space-y-10 bg-red-50 w-96 text-black p-12">
+                <h2 class="text-4xl  font-semibold">Allahu Akber</h2>
+                <p id="allahuAkberDisplay" class="text-5xl">0</p>
+                <div class="flex gap-3">
+                    <button id="allahuAkberIncriment" class="bg-green-600 text-white py-3 px-6 rounded-lg text-2xl font-medium" type="button">INCRIMENT
+                    </button>
+                    <button id="allahuAkberDecriment" class="bg-red-600 text-white py-3 px-6 rounded-lg text-2xl font-medium" type="button">DECRIMENT
+                    </button>
+                </div>
+            </div>
         </div>
+        <!-- reset all button -->
+         <div class="flex justify-center">
+            <button class="bg-yellow-600 text-white py-3 px-6 rounded-lg text-2xl font-medium" type="button">RESET ALL TASBIH
+            </button>
+         </div>
     </main>
 
     <!-- script file -->
-     <script src="script.js"></script>
-     <script src="tailwind.config.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
